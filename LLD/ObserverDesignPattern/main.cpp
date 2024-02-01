@@ -1,6 +1,6 @@
 #include "ObserverDesignPattern.h"
 
-int main() {
+int main1() {
   auto sobe = make_shared<SamsungObservable>();
   shared_ptr<Observer> so = make_shared<SamsungObserver>(sobe);
   shared_ptr<Observer> sto = make_shared<SamsungTabObserver>(sobe);
